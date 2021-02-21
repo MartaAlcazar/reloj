@@ -1,0 +1,217 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+
+// * {
+//   border: 1px solid pink;
+// }
+
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  position: fixed;
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sofia Sans';
+
+
+  .reloj {
+    width: 350px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .whatTime {
+      font-size: 6rem;
+      font-weight: bold;
+      margin-bottom: -1rem;
+    }
+
+    .whatDay {
+      font-size: 2rem;
+      font-weight: bold;
+
+    }
+  }
+
+  .countdown {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+}
+
+
+
+
+// fondos de pantalla
+.backgroundSpring {
+  background-image: url(../img/giphy.gif);
+  background-size: cover;
+  height: 100%;
+}
+
+.backgroundSummer {
+  background-image: url(../img/olivia-connell-Q7MRGbivEX8-unsplash.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.backgroundFall {
+  background-image: url(../img/pexels-david-geib-3220713.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.backgroundWinter {
+  background-image: url(../img/galina-n-AgWVcQz1bOA-unsplash.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+// degradados
+.springGrad {
+  opacity: 100%;
+  
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(152deg, #ff959591, #ffc75f9a, #fb93c495, #f3798795);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:73% 0%}
+  50%{background-position:28% 100%}
+  100%{background-position:73% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:73% 0%}
+  50%{background-position:28% 100%}
+  100%{background-position:73% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:73% 0%}
+  50%{background-position:28% 100%}
+  100%{background-position:73% 0%}
+}
+
+// .summerGrad {
+//   opacity: 100%;
+  
+//   width: 100%;
+//   height: 100%;
+  
+//   background: linear-gradient(152deg, #8ae35e9d, #ffdc5fa9, #97b18ba1, #fff834a1);
+//   background-size: 800% 800%;
+
+//   -webkit-animation: AnimationName 10s ease infinite;
+//   -moz-animation: AnimationName 10s ease infinite;
+//   animation: AnimationName 10s ease infinite;
+// }
+
+// @-webkit-keyframes AnimationName {
+//     0%{background-position:73% 0%}
+//     50%{background-position:28% 100%}
+//     100%{background-position:73% 0%}
+// }
+// @-moz-keyframes AnimationName {
+//     0%{background-position:73% 0%}
+//     50%{background-position:28% 100%}
+//     100%{background-position:73% 0%}
+// }
+// @keyframes AnimationName {
+//     0%{background-position:73% 0%}
+//     50%{background-position:28% 100%}
+//     100%{background-position:73% 0%}
+// }
+
+
+// .fallGrad {
+//   opacity: 100%;
+  
+//   width: 100%;
+//   height: 100%;
+
+//   background: linear-gradient(94deg, #e3b05ead, #ffdc5f96, #ed9653a6, #ff7134b4, #fff28fa8);
+//   background-size: 1000% 1000%;
+
+//   -webkit-animation: AnimationName 10s ease infinite;
+//   -moz-animation: AnimationName 10s ease infinite;
+//   animation: AnimationName 10s ease infinite;
+// }
+
+// @-webkit-keyframes AnimationName {
+//   0%{background-position:4% 0%}
+//   50%{background-position:97% 100%}
+//   100%{background-position:4% 0%}
+// }
+// @-moz-keyframes AnimationName {
+//   0%{background-position:4% 0%}
+//   50%{background-position:97% 100%}
+//   100%{background-position:4% 0%}
+// }
+// @keyframes AnimationName {
+//   0%{background-position:4% 0%}
+//   50%{background-position:97% 100%}
+//   100%{background-position:4% 0%}
+// }
+
+// .winterGrad {
+//   opacity: 100%;
+  
+//   width: 100%;
+//   height: 100%;
+
+//   background: linear-gradient(238deg, #5e88e3bd, #72d7eea4, #847efda9, #66c4f0af);
+//   background-size: 1000% 1000%;
+
+//   -webkit-animation: AnimationName 10s ease infinite;
+//   -moz-animation: AnimationName 10s ease infinite;
+//   animation: AnimationName 10s ease infinite;
+// }
+
+// @-webkit-keyframes AnimationName {
+//   0%{background-position:40% 0%}
+//   50%{background-position:61% 100%}
+//   100%{background-position:40% 0%}
+// }
+// @-moz-keyframes AnimationName {
+//   0%{background-position:40% 0%}
+//   50%{background-position:61% 100%}
+//   100%{background-position:40% 0%}
+// }
+// @keyframes AnimationName {
+//   0%{background-position:40% 0%}
+//   50%{background-position:61% 100%}
+//   100%{background-position:40% 0%}
+// }
